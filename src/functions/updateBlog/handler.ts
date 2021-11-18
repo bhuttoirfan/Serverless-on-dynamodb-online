@@ -4,14 +4,14 @@ import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/apiGateway';
 import { formatJSONResponse } from '@libs/apiGateway';
 import { middyfy } from '@libs/lambda';
 
-import schema from './schema';
+// import schema from './schema';
 
 import * as AWS from 'aws-sdk';
 const dynamo_db = new AWS.DynamoDB.DocumentClient({
-  region: "localhost"
+  // region: "localhost"
 });
 
-const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
+const handler = async (event) => {
   
   const key = event.body.author;
   const description = event.body.title;

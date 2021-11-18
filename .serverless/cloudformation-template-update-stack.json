@@ -180,7 +180,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dynamo-crud-in-ts/dev/1636455489788-2021-11-09T10:58:09.788Z/dynamo-crud-in-ts.zip"
+          "S3Key": "serverless/dynamo-crud-in-ts/dev/1637224764543-2021-11-18T08:39:24.543Z/dynamo-crud-in-ts.zip"
         },
         "Handler": "src/functions/postBlog/handler.main",
         "Runtime": "nodejs14.x",
@@ -211,7 +211,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dynamo-crud-in-ts/dev/1636455489788-2021-11-09T10:58:09.788Z/dynamo-crud-in-ts.zip"
+          "S3Key": "serverless/dynamo-crud-in-ts/dev/1637224764543-2021-11-18T08:39:24.543Z/dynamo-crud-in-ts.zip"
         },
         "Handler": "src/functions/getBlog/handler.main",
         "Runtime": "nodejs14.x",
@@ -242,7 +242,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dynamo-crud-in-ts/dev/1636455489788-2021-11-09T10:58:09.788Z/dynamo-crud-in-ts.zip"
+          "S3Key": "serverless/dynamo-crud-in-ts/dev/1637224764543-2021-11-18T08:39:24.543Z/dynamo-crud-in-ts.zip"
         },
         "Handler": "src/functions/updateBlog/handler.main",
         "Runtime": "nodejs14.x",
@@ -266,34 +266,34 @@
         "UpdateBlogLogGroup"
       ]
     },
-    "PostBlogLambdaVersionvAL6NFdRjhJX0Ng06Te9KdDUa7G8U7VgOqQ8HyRFKas": {
+    "PostBlogLambdaVersionwIY0x6oGWNVuhIf5BWSnEdPYhL0AELmHgvXrFhsQwg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PostBlogLambdaFunction"
         },
-        "CodeSha256": "vLGP1aiOiPlWiaNl77jye2cWzEoBbn9axP+EYkVzdQA="
+        "CodeSha256": "CYPXV0eRoHeZFRQ8y7ah1zvD7Ga/yTZBhlm9pWpbilU="
       }
     },
-    "GetBlogLambdaVersiongy1ZC19RJSZ3wgI6Fgor7PU6y1dRupWcSt51oD0": {
+    "GetBlogLambdaVersionGBifBUZCPeKc7TxYTnHCZdFlPoLnf060yyHyGPHxIw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetBlogLambdaFunction"
         },
-        "CodeSha256": "vLGP1aiOiPlWiaNl77jye2cWzEoBbn9axP+EYkVzdQA="
+        "CodeSha256": "CYPXV0eRoHeZFRQ8y7ah1zvD7Ga/yTZBhlm9pWpbilU="
       }
     },
-    "UpdateBlogLambdaVersionuCMI7zeFibNl1PAFqHoqFBBNDSbmWAi9pI5sDANnU": {
+    "UpdateBlogLambdaVersionpnkYcsH3GKknEjWjx03vGnVbvCFIWPq4Mo9xc8lxeMk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateBlogLambdaFunction"
         },
-        "CodeSha256": "vLGP1aiOiPlWiaNl77jye2cWzEoBbn9axP+EYkVzdQA="
+        "CodeSha256": "CYPXV0eRoHeZFRQ8y7ah1zvD7Ga/yTZBhlm9pWpbilU="
       }
     },
     "ApiGatewayRestApi": {
@@ -737,7 +737,7 @@
         }
       }
     },
-    "ApiGatewayDeployment1636455486358": {
+    "ApiGatewayDeployment1637224761107": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -897,7 +897,7 @@
     "PostBlogLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PostBlogLambdaVersionvAL6NFdRjhJX0Ng06Te9KdDUa7G8U7VgOqQ8HyRFKas"
+        "Ref": "PostBlogLambdaVersionwIY0x6oGWNVuhIf5BWSnEdPYhL0AELmHgvXrFhsQwg"
       },
       "Export": {
         "Name": "sls-dynamo-crud-in-ts-dev-PostBlogLambdaFunctionQualifiedArn"
@@ -906,7 +906,7 @@
     "GetBlogLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetBlogLambdaVersiongy1ZC19RJSZ3wgI6Fgor7PU6y1dRupWcSt51oD0"
+        "Ref": "GetBlogLambdaVersionGBifBUZCPeKc7TxYTnHCZdFlPoLnf060yyHyGPHxIw"
       },
       "Export": {
         "Name": "sls-dynamo-crud-in-ts-dev-GetBlogLambdaFunctionQualifiedArn"
@@ -915,7 +915,7 @@
     "UpdateBlogLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateBlogLambdaVersionuCMI7zeFibNl1PAFqHoqFBBNDSbmWAi9pI5sDANnU"
+        "Ref": "UpdateBlogLambdaVersionpnkYcsH3GKknEjWjx03vGnVbvCFIWPq4Mo9xc8lxeMk"
       },
       "Export": {
         "Name": "sls-dynamo-crud-in-ts-dev-UpdateBlogLambdaFunctionQualifiedArn"

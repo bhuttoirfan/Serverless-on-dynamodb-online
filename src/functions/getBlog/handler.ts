@@ -8,7 +8,7 @@ import schema from './schema';
 
 import * as AWS from 'aws-sdk';
 const dynamo_db = new AWS.DynamoDB.DocumentClient({
-  region: "localhost"
+  // region: "localhost"
 });
 
 const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
